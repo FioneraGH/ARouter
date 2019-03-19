@@ -5,7 +5,7 @@ ext {
     artifact = bintrayName
     libraryName = 'ARouter sdk'
     libraryDescription = 'A router for android'
-    libraryVersion = arouter_api_version
+    libraryVersion = arouter_main_version
 }
 
 android {
@@ -40,8 +40,8 @@ android {
 
 dependencies {
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.0'
-    compile 'com.alibaba:arouter-annotation:1.0.6'
-    compile "com.android.support:support-v4:${SUPPORT_LIB_VERSION}"
+    implementation 'com.alibaba:arouter-annotation:1.0.6'
+    implementation "com.android.support:support-v4:${SUPPORT_LIB_VERSION}"
 }
 
 apply from: '../install.gradle'
